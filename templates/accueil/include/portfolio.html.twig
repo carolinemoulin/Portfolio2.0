@@ -1,0 +1,31 @@
+{% block body %}
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-5">
+                <div class="col-md-7 text-center heading-section ftco-animate">
+                    <span>Portfolio</span>
+                    <h2>Découvrez mes réalisations</h2>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                {% for project in projects %}
+                    <div class="block-3 d-md-flex ftco-animate" data-scrollax-parent="true">
+                        <a href="{{ path('project_view', {'id':project.id}) }}" class="image d-flex justify-content-center align-items-center" style="background-image: url({{ asset(project.image) }}); " data-scrollax=" properties: { translateY: '-30%'}">
+                            <div class="icon d-flex text-center justify-content-center align-items-center">
+                                <span class="icon-search"></span>
+                            </div>
+                        </a>
+                        <div class="text">
+                            <h2 class="heading"><a href="{{ path('project_view', {'id':project.id}) }}">{{project.titleProject}}</a></h2>
+                            <p>{{project.description}}</p>
+                            {% if project.link is not null %}
+                                <p><a href="{{ asset(project.link) }}" target="_blank">Voir le projet</a></p>
+                            {% endif %}
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

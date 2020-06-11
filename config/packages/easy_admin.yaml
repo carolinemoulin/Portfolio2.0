@@ -1,0 +1,9 @@
+easy_admin:
+    entities:
+#        # List the entity class name you want to manage
+        - App\Entity\Jobs
+        - App\Entity\Trainings
+        - App\Entity\Projects
+        - App\Entity\Skills
+
+    site_name: 'Administration'

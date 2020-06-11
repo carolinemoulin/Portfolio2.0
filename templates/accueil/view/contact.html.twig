@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <section class="ftco-section contact-section">
+        <div class="container mt-5">
+            <div class="row d-flex mb-5 contact-info">
+
+                <div class="col-md-12 mb-4">
+                    <h2 class="h4">Contact Information</h2>
+                </div>
+                <div class="w-100"></div>
+
+                <div class="col-md-3">
+                    <p><span>Site web:</span> <a href="caroline-moulin.fr">caroline-moulin.fr</a></p>
+                </div>
+            </div>
+            <div class="row block-9">
+                <div class="col-md-6 pr-md-5">
+                    {{ form_start(form) }}
+                    <div class="form-group">
+                        {{ form_label(form.name) }}
+                        {{ form_errors(form.name) }}
+                        {{ form_widget(form.name) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.email) }}
+                        {{ form_errors(form.email) }}
+                        {{ form_widget(form.email) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.object) }}
+                        {{ form_errors(form.object) }}
+                        {{ form_widget(form.object) }}
+                    </div>
+                    <div class="form-group">
+                        {{ form_label(form.object) }}
+                        {{ form_errors(form.message) }}
+                        {{ form_widget(form.message) }}
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Envoyer" class="btn btn-primary py-3 px-5">
+                    </div>
+                    {{ form_end(form) }}
+
+
+                </div>
+                <div class="col-md-6" id="map"></div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

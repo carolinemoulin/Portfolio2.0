@@ -1,0 +1,132 @@
+body {
+    background: #8f82ab;
+    color: #fff;
+}
+
+body .KW_progressContainer {
+    background-color: #8f82ab;
+}
+
+body .KW_progressBar {
+    background-color: #0c0295;;
+}
+
+a {
+    color: #0c0295; }
+
+a:hover {
+    text-decoration: none;
+    color: #0c0295; }
+
+h1, h2, h3, h4, h5,
+.h1, .h2, .h3, .h4, .h5 {
+    color: #810033;
+}
+
+.colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+    background: #8f82ab;
+}
+
+.colorlib-nav-toggle i {
+    color: #8f82ab;
+}
+
+.btn.btn-primary {
+    border: #8f82ab;
+}
+
+.btn.btn-primary:hover {
+    border: #8f82ab;
+    color: #8f82ab;
+}
+
+.btn.btn-primary.btn-outline-primary:hover {
+    border: #8f82ab;
+}
+
+.btn.btn-outline-white:hover, .btn.btn-outline-white:focus, .btn.btn-outline-white:active {
+    color: #8f82ab;
+}
+
+.progress-bar {
+    color: #8f82ab;
+}
+
+.ftco-tab-nav li a.active {
+    border: #8f82ab;
+}
+
+.ftco-footer {
+    background: #8f82ab;
+}
+
+.ftco-footer .ftco-heading-2 {
+    color: #8f82ab;
+}
+
+.block-7 .pricing-text li strong {
+    color: #8f82ab;
+}
+
+.block-8 .accordion-item .heading > a {
+    color: #8f82ab;
+}
+
+.comment-list li .comment-body .reply:hover {
+    background: #8f82ab;
+}
+
+.categories li.active a, .sidelink li.active a {
+    color: #8f82ab;
+}
+
+.block-3 .text .subheading {
+    color: #810033; }
+
+.custom-pagination li.active a, .custom-pagination .prev.active a, .custom-pagination .next.active a {
+    color: #0c0295;
+}
+
+.block-3 .image .icon {
+    background: #0c0295;
+}
+
+.colorlib-nav-toggle.dark.active i::before, .colorlib-nav-toggle.dark.active i::after {
+    background: #8f82ab; }
+
+.colorlib-nav-toggle i {
+    color: #8f82ab;
+}
+
+#colorlib-main-nav {
+    background: #8f82ab;
+}
+
+#colorlib-main-nav ul li.active a span {
+    color: #0c0295; }
+#colorlib-main-nav ul li.active a span:before {
+    background: #0c0295;
+}
+
+header .colorlib-navbar-brand .colorlib-logo {
+    color: #810033;
+}
+
+#colorlib-main-nav .logo {
+    color: #810033; }
+
+.form-control::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.form-control {
+    color: #fff !important;
+}
+
+.contact-section .contact-info p a {
+    color: #0c0295;
+}
+
+.exp-wrap .desc h4 span {
+    color: #fff;
+}

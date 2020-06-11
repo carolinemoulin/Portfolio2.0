@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <section class="ftco-section about-section">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="mb-3">{{ project.titleProject }}</h2>
+                    <p>{{project.description}}</p>
+                    <p>
+                        <img src="{{ asset(project.image) }}" alt="image du projet" class="img-fluid">
+                    </p>
+                    <p>{{project.techno}} </p>
+                    <p><a href="{{ asset(project.link) }}" target="_blank">Voir le projet</a></p>
+                </div> <!-- .col-md-8 -->
+            </div>
+        </div>
+    </section>
+{% endblock %}

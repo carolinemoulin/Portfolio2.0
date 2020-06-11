@@ -1,0 +1,51 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+    <section class="ftco-section about-section">
+        <div class="container">
+            <div class="row d-flex" data-scrollax-parent="true">
+                <div class="col-md-8 wrap ftco-animate">
+                    <div class="about-desc">
+
+                        <div class="p-5">
+
+                            <form method="post">
+                                {% if error %}
+                                    <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                                {% endif %}
+
+                                <h2 class="mb-5">Connexion</h2>
+
+                                <label for="inputUsername" class="sr-only">Identifiant</label>
+                                <input type="text" value="{{ last_username }}" name="username" id="inputUsername" class="form-control" placeholder="Identifiant" required autofocus>
+                                <label for="inputPassword" class="sr-only">Mot de passe</label>
+                                <input type="password" name="password" id="inputPassword" class="form-control" placeholder="Mot de passe" required>
+
+                                <input type="hidden" name="_csrf_token"
+                                       value="{{ csrf_token('authenticate') }}"
+                                >
+
+                                {#
+                                    Uncomment this section and add a remember_me option below your firewall to activate remember me functionality.
+                                    See https://symfony.com/doc/current/security/remember_me.html #}
+
+                                    <div class="checkbox mb-3">
+                                        <label>
+                                            <input type="checkbox" name="_remember_me"> Se souvenir de moi
+                                        </label>
+                                    </div>
+
+
+                                <button class="btn btn-lg btn-primary" type="submit">
+                                    Connexion
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

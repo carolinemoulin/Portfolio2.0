@@ -1,0 +1,26 @@
+{% block body %}
+
+    <section class="ftco-section about-section">
+        <div class="container">
+            <div class="row d-flex" data-scrollax-parent="true">
+                <div class="col-md-4 author-img" style="background-image: url({{ asset('images/profile.JPG') }});" data-scrollax=" properties: { translateY: '-70%'}"></div>
+                <div class="col-md-2"></div>
+                <div class="col-md-6 wrap ftco-animate">
+                    <div class="about-desc">
+                        <h1 class="bold-text">A propos</h1>
+                        <div class="p-5">
+                            <h2 class="mb-5">Bonjour ! Je suis Caroline Moulin</h2>
+                            <p>Avant de suivre la formation de Développeur Web Junior chez OpenClassrooms, j'ai eu l'occasion de mettre mes compétences à disposition pour plusieurs sociétés.</p>
+                            <p><a href="{{ asset('../images/cv.pdf') }}" download="cv">Télécharger mon CV</a></p>
+                            <ul class="ftco-footer-social list-unstyled mt-4">
+                                <li><a href="https://twitter.com/CarolineMoulin4" target="_blank"><span class="icon-twitter"></span></a></li>
+                                <li><a href="https://www.linkedin.com/in/camoulin" target="_blank"><span class="icon-linkedin"></span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}

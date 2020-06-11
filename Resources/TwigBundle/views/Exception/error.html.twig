@@ -1,0 +1,18 @@
+{# app/Resources/TwigBundle/views/Exception/error.html.twig #}
+<title>Erreur survenue : {{ status_text }}</title>
+
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Oups! une erreur est survenue</h1>
+    <h2>Le serveur a retourné une erreur "{{ status_code }} {{ status_text }}".</h2>
+
+    <p>
+        Nous faisons le nécessaire pour remettre le site en service le plus vite possible
+    </p>
+
+    <p>
+        <a href="{{ path('home') }}">Retour à la page d'accueil</a>.
+    </p>
+{% endblock %}
