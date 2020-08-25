@@ -12,11 +12,13 @@
                         <h1 class="bold-text">CV</h1>
                         <div class="p-5">
                             <h2 class="mb-5">Bonjour, je suis Caroline Moulin.</h2>
-                            <p>Avant de suivre la formation de Développeur Web Junior chez OpenClassrooms, j'ai eu l'occasion de mettre mes compétences à disposition pour plusieurs sociétés.</p>
-                            <p><a href=url{{ asset('../images/cv.pdf') }} download="cv">Télécharger mon CV</a></p>
+                            <p>Je suis toujours à la recherche de nouvelles compétences. Pour cela je suis auto-didacte et je suis des formations comme celle de Diginamic et d'OpenClassrooms.</p>
+                            <p> Avant cela, j'ai eu l'occasion de mettre mes compétences à disposition pour plusieurs sociétés.</p>
+                            <p><a href=url{{ asset('../images/cv2.pdf') }} download="cv">Télécharger mon CV</a></p>
                             <ul class="ftco-footer-social list-unstyled mt-4">
                                 <li><a href="https://twitter.com/CarolineMoulin4" target="_blank"><span class="icon-twitter"></span></a></li>
                                 <li><a href="https://www.linkedin.com/in/camoulin" target="_blank"><span class="icon-linkedin"></span></a></li>
+                                <li><a href="http://caroline-moulin.fr" target="_blank"><span class="icon-github"></span></a></li>
                             </ul>
                         </div>
                     </div>
@@ -27,40 +29,11 @@
                     <div class="profile ftco-animate">
                         <h2 class="mb-4">Profil</h2>
                         <h3 class="mb-4">Je suis développeuse web près de Montpellier.</h3>
-                        <p>Avant de suivre la formation de Développeur Web Junior chez OpenClassrooms, j'ai eu l'occasion de mettre mes compétences à disposition pour plusieurs sociétés.</p>
+                        <p>Je suis toujours à la recherche de nouvelles compétences. Pour cela je suis autodidacte et je suis des formations comme celle de Diginamic et d'OpenClassrooms.</p>
+                        <p>Avant cela, j'ai eu l'occasion de mettre mes compétences à disposition pour plusieurs sociétés.</p>
 
                     </div>
 
-                    <div class="exp mt-5 ftco-animate">
-                        <h2 class="mb-4">Expérience</h2>
-                        {% for job in jobs %}
-                            <div class="exp-wrap py-4">
-                                <div class="desc">
-                                    <h3>{{ job.entreprise }} <span> - {{ job.position }}</span></h3>
-                                    <img class="img-fluid mb-5" src="{{ asset(job.logo) }}" alt="logo entreprise">
-                                    <p>{{ job.missions }}</p>
-                                    <p class="year">De {{ job.dateStart |date('Y') }} à {{ job.dateEnd |date('Y') }}</p>
-                                </div>
-                            </div>
-                        {% endfor %}
-                    </div>
-
-                    <div class="exp mt-5 ftco-animate">
-                        <h2 class="mb-4">Formations</h2>
-                        <div class="exp-wrap py-4">
-                            <div class="desc">
-                                {% for training in trainings %}
-                                    <h4>{{ training.graduate }}<span>  {{ training.institution }}</span></h4>
-                                    <div class="year">
-                                        <p>{{ training.date |date('Y') }}</p>
-                                    </div>
-                                    <p class="mb-5"></p>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
             <div class="row mt-5 flex-column ftco-animate">
                 <div class="col-md-8">
                     <h2 class="mb-4">Mes compétences</h2>
@@ -75,8 +48,46 @@
                             <p class="mb-5"></p>
                         {% endfor %}
                     </div>
+
+              </div>
+                <div>
+                    <p>J'ai obtenu un score de 735 points à la certification Opquast.</p>
+                    <a href="https://oqs.li/YFMWUD" target="_blank" rel="noopener noreferrer"> Lien d'authentification </a>
+                </div>
                 </div>
 
+            </div>
+                    <div>
+                        <div class="exp mt-5 ftco-animate">
+                            <h2 class="mb-4">Expérience</h2>
+                            {% for job in jobs %}
+                                <div class="exp-wrap py-4">
+                                    <div class="desc">
+                                        <h3>{{ job.entreprise }} <span> - {{ job.position }}</span></h3>
+                                        <img class="img-fluid mb-5" src="{{ asset(job.logo) }}" alt="logo entreprise">
+                                        <p>{{ job.missions }}</p>
+                                        <p class="year">De {{ job.dateStart |date('Y') }} à {{ job.dateEnd |date('Y') }}</p>
+                                    </div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                        
+                        <div class="exp mt-5 ftco-animate">
+                            <h2 class="mb-4">Formations</h2>
+                            <div class="exp-wrap py-4">
+                                <div class="desc">
+                                    {% for training in trainings %}
+                                        <h4>{{ training.graduate }}<span>  {{ training.institution }}</span></h4>
+                                        <div class="year">
+                                            <p>{{ training.date |date('Y') }}</p>
+                                        </div>
+                                        <p class="mb-5"></p>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
